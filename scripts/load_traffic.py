@@ -7,7 +7,7 @@ spark = (
     .config("spark.jars.packages", 
             "org.apache.hadoop:hadoop-aws:3.4.0,"
             "com.amazonaws:aws-java-sdk-bundle:1.12.262,"
-            "net.snowflake:spark-snowflake_2.13:2.15.0-spark_3.4") # جرب 2.13 بدل 2.12
+            "net.snowflake:spark-snowflake_2.13:2.15.0-spark_3.4") 
     
     # MinIO Config
     .config("spark.hadoop.fs.s3a.endpoint", "http://minio:9000")
@@ -105,8 +105,8 @@ Fact_Collisions = spark.read.csv(
 # connect with snowflake 
 sf_options = {
     "sfURL": "dpaatty-ts25706.snowflakecomputing.com",
-    "sfUser": "ahmedrefat1412",
-    "sfPassword": "Aas#1412Aas#1412",
+    "sfUser": "#$#4%$#4",
+    "sfPassword": "$$$@#3@",
     "sfDatabase": "NYC_DW",
     "sfSchema": "PUBLIC",
     "sfWarehouse": "COMPUTE_WH"
@@ -122,7 +122,6 @@ def write_to_snowflake(df, table_name, sf_options, mode="overwrite"):
       .save()
 
 
-# مثال: لو عندك DataFrames لكل Dimension
 dimensions = {
     "Dim_Borough": Dim_Borough,
     "Dim_Complaint": Dim_Complaint,
