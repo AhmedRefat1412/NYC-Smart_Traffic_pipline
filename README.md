@@ -19,7 +19,7 @@ The architecture combines **Batch Processing** and **Real-Time Streaming** to de
 
 ## 📊 Dashboard
 
-![Dashboard](https://github.com/AhmedRefat1412/NYC-Smart_Traffic_pipline/blob/main/docs/nyc_dashbord.pdf)
+![Dashboard](https://github.com/AhmedRefat1412/NYC-Smart_Traffic_pipline/blob/main/docs/Screenshot%202026-01-20%20012808.png)
 
 Interactive dashboards built using:
 - Power BI → Business insights  
